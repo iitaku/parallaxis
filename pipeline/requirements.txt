@@ -1,0 +1,17 @@
+# Parallaxis Phase 1 Pipeline — Python Dependencies
+#
+# Core (required for all steps)
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# 3DGS training & rendering (requires NVIDIA CUDA)
+# Install PyTorch first: https://pytorch.org/get-started/locally/
+torch>=2.0.0
+gsplat>=1.0.0
+
+# Note: the following are external CLI tools, NOT pip packages:
+# - COLMAP:  brew install colmap  or  https://colmap.github.io/install.html
+# - GLOMAP:  https://github.com/colmap/glomap (build from source)
+# - spatial: brew install spatial  (macOS only)
+# - ffmpeg:  brew install ffmpeg
+# - OpenSplat: https://github.com/pierotofy/OpenSplat (build from source, Mac Metal alternative)
